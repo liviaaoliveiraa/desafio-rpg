@@ -1,5 +1,6 @@
 let nome = ' Ellie ' ;
 let classe = ' Mago ' ;
+let elemento = ' Morte ' ;
 let nivel = 20 ;
 let vida = 100 ;
 let ouro = 40 ;
@@ -9,6 +10,7 @@ let manaAtual = 60 ;
 let manaMaxima = 90 ;
 let vidaMaxima = 100 ;
 let localAtual = ' Cidade Impossível, Tenebris '
+
 
 
 const NOMEARMA = 'Grimório Decadência' ;
@@ -68,8 +70,7 @@ console.log (`• Ouro: ${ouro}`) ;
 console.log (`• Exeperiencia: ${experiencia}`) ;
 console.log (`• Vida Maxima: ${vidaMaxima} `) ;
 console.log (`• Mana Atual: ${manaAtual} `) ;
-console.log (`• Mana Maxima: ${manaMaxima}`) ;
-
+console.log (`• Elemento Paranormal: ${elemento}`)
 // Adicionando novos atributos para batalha...
 
 let forca = 15 ;
@@ -87,8 +88,11 @@ console.log (` Enquanto ${nome} estava fazendo a proteção da ${localAtual}, el
 //Verificação de classe
 
 if (classe === 'Mago') {
-    console.log (`💫 ${nome} sabe que consegue amaldiçoar e aprimorar sua arma por conta de sua classe`) ;
+    console.log (`💫 ${nome} sabe que consegue amaldiçoar e aprimorar sua arma por conta de sua classe sem ter nenhuma penalidade com isso`) ;
+
 }
+
+//No RPG em que eu estou me inspirando, caso o personagem não tivesse um certo treinamento na área em que a missão é feita (no caso os feitiços e amaldicionamentos de coisas), ele pode perder pontos de vida 
 
 //Verificação do nível de mana do personagem
 
@@ -97,3 +101,7 @@ if ( manaAtual >= 30 ){
 }
 
 //
+
+if (elemento === 'Morte') {
+    console.log ( ` Após amaldiçoar o ${NOMEARMA} símbolos antigos se acendem na cor preta, mas como se fossem escritos por sangue, sangue seco. O elemento de ${elemento} percorre as páginas, amaldiciçoando o ${NOMEARMA} com novos feitiços`)
+}
