@@ -76,8 +76,8 @@ console.log (`• Sanidade Atual: ${sanidade}`) ;
 
 //  Adicionando novos atributos para batalha...
 
-let forca = 15 ;
-let defesa = 15 ;
+let forca = 40 ;
+let defesa = 40 ;
 let agilidade = 20 ;
 let vigor = 10 ;
 let presenca = 50 ;
@@ -143,3 +143,39 @@ if ( sanidade < 60) {
 } else {
     console.log (` ${nome} se conecta ao ${NOMEARMA} e ao seu elemento, e começa a sentir seu poder canalizando e consegue fortalacer temporariamente a membrana`) ;
 }
+
+console.log ('-------------------------------------------') ;
+
+// Capítulo 3 - Condicionais encadeadas
+
+console.log ( ' Capítulo 3 - 💫 Batalha ') ;
+console.log (`${nome} sente a membrana enfraquecer mesmo com a sua proteção, ficando com cada vez mais neblina na ${localAtual} `) ;
+
+let poderInimigo = 30 ;
+let poderTotal = forca + defesa + agilidade + vigor + presenca ;
+
+// Novamente, no RPG que estou me inspirando, a aparição de neblina em um local significa que a membrana está fraca, e que a aparição de eventos ou criaturas paranormais pode estar prestes a acontecer
+
+console.log (`Derrepente, é como se tudo tivesse sido repleto de sangue na visão de ${nome}, como se o mundo de tivesse sido derretido por um momento. Então surge uma criatura,com uma silhueta quase humanoide no meio da neblina, exeto pelo fato de suas garras serem enormes,sua pele avermelhada e seu jeito encurvado e corcunda de andar, e enquanto a criatura ia se aproximando era cada vez mais possível de ver sua face,porém a criatura não tinha um rosto, ela tinha apenas dentes enormes no lugar da cara, como se o rosto dela fosse uma boca enorme e nojenta`) ;
+
+if ( poderTotal > poderInimigo + 38 ) {
+    console.log (`${nome} concentra todo o seu poder, e então decide conjurar um ritual de seu elemento de ${elemento}. Com seu ${NOMEARMA} ao seu lado, ela conjura um ritual onde cria uma cópia da criatura entre as palmas da sua mão`) ;
+    console.log (`Enquanto a criatura caminhava lentamente em sua direção, com uma postura torta e cambalejando, ${nome} se concentra enquanto olha fixamente para a criatura, pega um pouco de poeira que está no chão e faz uma projeção negra da criatura entra as suas palmas`) ;
+    console.log (` Enquanto ${nome} se concentra em realizar seu ritual sua aparencia muda,seus olhos ficam por inteiro pretos, suas orelhas começam a ficar pontudas,o tom de seus cabelos começam a mudar para tons de preto e tatuagens com simbulos paranormais começam a aparecer em todo seu seu corpo.Isso enquanto o ritual estava acontecendo`) ;
+    console.log (` O ${NOMEARMA} começa a brilhar em tons frios como preto e branco nas gravuras de sua capa e as páginas dele comçam a ser folhetadas sozinhas enquanto ${nome} faz o ritual`) ;
+    console.log (`Assim que a cópia da criatura fica pronta entre as palmas das mãos de ${nome} ela "estoura" o ritual, fechando a palma das mãos bem quando a criatura estava em sua frente prestes a atacar. A criatura acaba sendo corroída por dentro pela morte.destruída antes que pudesee prejudicar mais ${localAtual}`) ;
+} else if (poderTotal >= poderInimigo && poderTotal <= poderInimigo + 30 ) {
+    console.log (`Enquanto ${nome} estava fazendo uma cópia da criatura entra suas palmas, não consegue realizar o ritual a tempo de acabar de vez com a criatura e fechar as palmas das mãos para mata-la e então, acaba sendo ferida pela criatura, porém ${nome} não desiste `) ;
+    console.log (`${nome} canaliza o resto da sua mana e do seu elemento de ${elemento} e invoca um feitiço instável  e joga sobre a criatura`) ;
+    console.log (`A criatura recua, ferida e quase desacordada pelo dano de morte que ${nome} deu nela... mais ainda viva`) ;
+    console.log (`${localAtual} permanece em risco, principalmente pela vúlnerabilidade da membrana`) ;
+    vida =- 10 ;
+} else {
+    console.log (`${nome} cai de joelhos antes mesmo de completar o ritual contra a criatura, ${nome} nem parece perceber a velocidade que a criatura chega até ela,pois quando ${nome} olha para aquela criatura nojenta e humanoide, ela já está em cima de ${nome}`) ;
+    console.log (` O ${NOMEARMA} começa a vibrar,tremer e a levitar, ${nome} escuta vindo do ${NOMEARMA} que está ao seu lado, palavras que ela não consegue compreender`) ;
+    console.log (`${nome} sem forças, sua magia falha e a criatura ataca. A Barreira de proteção a membrana se rompe. E o outro lado começa a cosumir ${localAtual} sem alguém para protege-la`) ;
+    sanidade -= 10 ;
+    console.log (` Sanidade Diminuiída. Atual:`, sanidade ) ;
+}
+
+//Esse ritual realmente exite no universo em que me inspiro,porém ele não é exatamente como descrevi, mas acho a narrativa dele muito boa e interessante
