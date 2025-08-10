@@ -190,3 +190,33 @@ if ( poderTotal > poderInimigo + 38 ) {
 }
 
 //Esse ritual realmente exite no universo em que me inspiro,porém ele não é exatamente como descrevi, mas acho a narrativa dele muito boa e interessante
+
+//Continuação...
+
+//Inimigos do outro lado...
+
+let entidadesDoOutroLado = [
+    { nome: 'Gal', poder: 35 } ,
+    { nome: 'Tbag', poder: 20} ,
+]
+
+console.log (`Após a vitória da guerra final,${localAtual} fica relativamente segura, até o momento`) ;
+console.log (`A membrana permanece do mesmo jeito que sempre esteve, porém era como se ${nome} sentisse abrir sútis fissuras na membrana, como se algo tivesse entrando por elas...`) ;
+console.log (`Dessas fissuras, duas entidades ligadas ao Outro Lado,que usam o poder do paranormal para o mal, surgem,atraídas pela energia e vulnerabilidade da última batalha, tentando invandir para danificar e acabar com o umas dos maiores locais paranormais existente,${localAtual}`) ;
+
+//For tradicional...
+
+for (let i = 0; i <entidadesDoOutroLado.length; i++){
+    let inimigo = entidadesDoOutroLado[i] ;
+    console.log (`${nome} enfrenta: ${inimigo.nome} (Poder:${inimigo.poder})`) ;
+
+
+if (poderTotal >= inimigo.poder + 10) {
+    console.log (`${nome} derrota ${inimigo.nome} seu inimigo, com facilidade, expulsando-o de seu território sem muito alvoroço, a membrana continua do mesmo jeito que sempre esteve`) ;
+} else {
+    console.log (`${nome} é ferida na luta contra${inimigo.nome}, mas consegue expulsa-los com muito esforço e luta`) ;
+    vigor -= 5 ;
+    vida -= 30 ;
+}
+}
+
