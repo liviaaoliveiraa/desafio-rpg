@@ -220,3 +220,21 @@ if (poderTotal >= inimigo.poder + 10) {
 }
 }
 
+//Métodos de Array...
+
+let inventario = [ 'Capa da Morte', 'Grimório Decadência','40 Moedas de Ouro', 'joia Luminosa' ] ;
+
+console.log (`Após a pequena batalha que ${nome} teve com entidades ligadas ao Outro Lado, ela continua fazendo sua proteção a ${localAtual},rondando e observando o locar para averiguar que não tem nada fora do comum `) ;
+console.log (`Enquanto ${nome} estava andando por ${localAtual}, ela acaba encontrando um Amuleto Misterioso jogado no chão.${nome} então, decide pega-lo e analisa-lo`) ;
+let itemEncontrado = "Amuleto de Morte" ;
+console.log (`Enquanto ${nome} estava analisando o ${itemEncontrado}, ela percebe que o elemento paranormal presente neste amuleto seria o de ${elemento},seu próprio elemento, por isso, ela decide ficar com o objeto`) ;
+console.log (`Porém ${nome} percebe que não conseguiria levar tantos objetos com ela,`) ;
+console.log (`${nome} decide largar a sua Joia Luminosa e pegar o ${itemEncontrado}`) ;
+
+//Removendo o último item..
+let itemRemovido = inventario.pop ();
+
+//Colocando o item encontrado no inventário...
+inventario.push (itemEncontrado) ;
+
+console.log ('Inventário Atual:', inventario) ;
