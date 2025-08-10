@@ -239,3 +239,13 @@ let itemRemovido = inventario.pop ();
 inventario.push (itemEncontrado) ;
 
 console.log ('Inventário Atual:', inventario) ;
+
+//Usando for...of ...
+
+for (let inimigo of entidadesDoOutroLado){
+    console.log (`${nome}, enquanto caminhava pela ${localAtual},observa as marcas das fissuras na membrana deixadas por (${inimigo.nome}  antes das mesmas desaparecerem. Se ${nome} não tivesse treinamento, conhecimento e afinidade com o Outro lado e o paranormal, ${nome} não poderia sequer sentir ou ver a membrana `) ;
+}
+
+//Final...
+console.log (`Com todas as entidades e criaturas derrotadas, ${nome} consegue restaurar o que sobrou das fissuras das membranas, apesar da eterna fragilidade da membrana de ${localAtual}`) ;
+console.log (`Apesar disso, ${nome} continua fazendo a proteção de ${localAtual}. O silêncio retorna, e a escuridão do outro lado da membrana permanece por lá`) ;
